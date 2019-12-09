@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <header id='title'>
+        <h1>
+            Suvey Form
+        </h1>
+    </header>
+    <section>
+        <p id='description'>
+            Pleas answer all questions below and submit.
+        </p>
+    </section>
+    <form id="survey-form" action="/action_page.php" method="get">
+        Name: <input type="text" name="name" id="name-lable" placeholder="Enter your full name"><br>
+        Email: <input type="email" name="email" id="email-lable" placeholder="Enter your email"><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="number-lable" name="number" min="18" max="100" placeholder="Enter your age">
+
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>

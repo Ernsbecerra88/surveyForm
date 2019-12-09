@@ -1,0 +1,35 @@
+body {
+   background-color: azure; 
+}
+
+header h1{
+font-family: cursive;
+font-size: large;
+background-color: blanchedalmond;
+margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  text-align: center;
+}
+
+section p{
+    font-family: cursive;  
+    background-color: snow;
+    margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  text-align: center;
+}
+
+form {
+    background-color: rgb(116, 177, 172);
+    font-family: cursive;  
+    margin: auto;
+  width: 50%;
+  border: 3px solid rgb(105, 151, 105);
+  padding: 10px;
+  text-align: center;
+  opacity: .4;
+}
