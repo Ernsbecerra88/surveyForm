@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
     <header id='title'>
         <h1>
             Suvey Form
@@ -19,28 +20,31 @@
             Thank you for taking the time to help us improve the platform
         </h2>
     </header>
+
     <section>
         <p id='description'>
             Pleas answer all questions below and submit.
         </p>
     </section>
-    <form action="mailto:ernsbecerra@gmail.com.com" method="post" enctype="text/plain">
-        Name: <input type="text" name="name" id="name-lable" placeholder="Enter your full name">
-        <br>
-        Email: <input type="email" name="email" id="email-lable" placeholder="Enter your email">
-        <br>
 
-        <label for="age">Age:</label>
-        <input type="number" id="number-lable" name="number" min="18" max="100" placeholder="Enter your age">
+    <form id='survey-form' action="mailto:ernsbecerra@gmail.com.com" method="post" enctype="text/plain">
+        <label id="number-lable" for="age">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your full name">
+        <br>
+        <label id="email-lable" for="age">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+        <br>
+        <label id="number-lable" for="age">Age:</label>
+        <input type="number" id="number" name="number" min="18" max="100" placeholder="Enter your age">
 
         <br>
         <p>Which option best describes your current role?</p>
-        <select name="userOptions">
-            <option value="" disabled selected>Select your option</option>
-            <option value="Student">Student </option>
-            <option value="Full time job">Full time job</option>
-            <option value="Full time learner">Full time learner</option>
-            <option value="other">other</option>
+        <select id="dropDown" name="userOptions">
+            <option name="role" value="" disabled selected>Select your option</option>
+            <option name="role" value="Student">Student </option>
+            <option name="role" value="Full time job">Full time job</option>
+            <option name="role" value="Full time learner">Full time learner</option>
+            <option name="role" value="other">other</option>
         </select>
         <br>
         <p>Would you recommend Ernesto's services to a friend?</p>
@@ -51,11 +55,11 @@
 
         <p>What is your favorite feature of freeCodeCamp?</p>
         <select name="userOptions">
-            <option value="" disabled selected>Select your option</option>
-            <option value="Challanges">Challanges</option>
-            <option value="Projects">Projects</option>
-            <option value="Community">Community</option>
-            <option value="Open Source">Open Source</option>
+            <option name="favorite" value="" disabled selected>Select your option</option>
+            <option name="favorite" value="Challanges">Challanges</option>
+            <option name="favorite" value="Projects">Projects</option>
+            <option name="favorite" value="Community">Community</option>
+            <option name="favorite" value="Open Source">Open Source</option>
         </select>
         <br>
 
@@ -63,30 +67,36 @@
 
         <select name="userOptionsTwo" multiple size="11">
 
-            <input type="radio" value="frontEndProjects">Front-end Projects
+            <input type="radio" name="improve" value="frontEndProjects">Front-end Projects
             <br>
-            <input type="radio" value="backEndProjects">Back-end Projects
+            <input type="radio" name="improve" value="backEndProjects">Back-end Projects
             <br>
-            <input type="radio" value="dataVisualization">Data Visualization
+            <input type="radio" name="improve" value="dataVisualization">Data Visualization
             <br>
-            <input type="radio" value="openSourceCommunity">Open Source Community
+            <input type="radio" name="improve" value="openSourceCommunity">Open Source Community
             <br>
-            <input type="radio" value="gitterHelpRooms">Gitter help rooms
+            <input type="radio" name="improve" value="gitterHelpRooms">Gitter help rooms
             <br>
-            <input type="radio" value="videos">Videos
+            <input type="radio" name="improve" value="videos">Videos
             <br>
-            <input type="radio" value="cityMeetups">City Meetups
+            <input type="radio" name="improve" value="cityMeetups">City Meetups
             <br>
-            <input type="radio" value="wiki">Wiki
+            <input type="radio" name="improve" value="wiki">Wiki
             <br>
-            <input type="radio" value="forum">Forum
+            <input type="radio" name="improve" value="forum">Forum
             <br>
-            <input type="radio" value="additionalCourses">Additional Courses
+            <input type="radio" name="improve" value="additionalCourses">Additional Courses
             <br>
         </select>
         <br>
+        <div id="textarea">
+            <p>any comments or suggestions</p>
+            <textarea rows="4" cols="50" name="comment" form="usrform">
+        Enter your comments here...</textarea>
+            <br>
 
-        <input type="submit" value="Submit">
+        </div>
+        <input id="submit" type="submit" value="Submit" >
         <br>
     </form>
 
